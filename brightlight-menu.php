@@ -7,7 +7,7 @@ Author:            	Gary Swift
 Author URI:        	https://github.com/GarySwift
 License:           	MIT License
 License URI:       	http://www.opensource.org/licenses/mit-license.php
-Text Domain:       	brightlight-main-menu
+Text Domain:       	wp-swift-brightlight-main-menu
 */
 class WP_Swift_Brightlight_Admin_menu {
     /*
@@ -21,10 +21,10 @@ class WP_Swift_Brightlight_Admin_menu {
 		// Create top-level menu item
 		add_menu_page( 'BrightLight Configuration Page',
 		   'BrightLight', 'manage_options',
-		   'brightlight-main-menu', array($this, 'brightlight_complex_main'),
+		   'wp-swift-brightlight-main-menu', array($this, 'brightlight_complex_main'),
 		   plugins_url( 'favicon-16x16.png', __FILE__ ) );
 		// Create a sub-menu under the top-level menu
-		add_submenu_page( 'brightlight-main-menu',
+		add_submenu_page( 'wp-swift-brightlight-main-menu',
 		   'BrightLight Menu Sub-Config Page', 'Sub-Config Page',
 		   'manage_options', 'brightlight-sub-menu',
 		   array($this, 'brightlight_my_complex_submenu') );
